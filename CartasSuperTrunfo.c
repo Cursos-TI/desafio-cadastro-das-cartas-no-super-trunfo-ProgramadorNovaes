@@ -13,6 +13,8 @@ float area,pib;
 printf("   Digite uma letra para Categoria Estado:\n");
 scanf("%c", &estado);
 
+
+
 printf("   Digite um numero de 1 a 4: \n");
 scanf("%c", &codigo);
 
