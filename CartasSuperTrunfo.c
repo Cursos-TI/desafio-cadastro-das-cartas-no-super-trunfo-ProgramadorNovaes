@@ -2,8 +2,10 @@
 
 int main() {
 
-printf("--------------------------------")
-printf("      Jogo Super Trunfo\n       ");
+printf("---------------------------------------------\n");
+printf("-      Bem Vindo ao Jogo Super Trunfo       -\n");
+printf("---------------------------------------------\n");
+
 
 
 
