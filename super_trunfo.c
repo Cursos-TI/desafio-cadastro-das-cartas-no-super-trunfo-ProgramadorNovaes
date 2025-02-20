@@ -2,12 +2,16 @@
 
 int main() {
 
+#define total_cartas 2
+
 printf("---------------------------------------------\n");
 printf("-      Bem Vindo ao Jogo Super Trunfo       -\n");
 printf("---------------------------------------------\n");
 
 printf("Primeiro voçê vai digitar os dados da primeira carta\n");
 printf("____________________________________________________\n");
+    
+typedef struct {
     int idade1;                                       
     int populacao1; 
     int pontos1;                                                                     
@@ -15,7 +19,9 @@ printf("____________________________________________________\n");
     double pib1;                 
     char estado1;                                     
     char codigo1[4];                                
-    char cidade1[12];                 
+    char cidade1[12]; 
+    
+} carta;
 
     printf ("Digite um número: \n", idade1);
     scanf("%d", &idade1);
