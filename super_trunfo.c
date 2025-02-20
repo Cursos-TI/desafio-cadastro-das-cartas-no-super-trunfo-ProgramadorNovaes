@@ -38,15 +38,15 @@ printf("____________________________________________________\n");
     printf("---------------------------------------------\n");
 
     printf("Área (em km²): \n", area1);  
-    scanf(":%f", &area1); 
+    scanf("%f", &area1); 
     printf("---------------------------------------------\n");
 
     printf("PIB: \n", pib1);
-    scanf(":%lf", &pib1);  
+    scanf("%lf", &pib1);  
     printf("---------------------------------------------\n");
 
     printf("Números de pontos Turísticos: \n",pontos1);
-    scanf(":%d", &pontos1);
+    scanf("%d", &pontos1);
     printf("---------------------------------------------\n");
 
     printf("Esse são os dados da sua primeira carta\n");
@@ -57,7 +57,7 @@ printf("____________________________________________________\n");
     printf("População: %d\n", populacao1);
     printf("Área: %.3f km²\n", area1);
     printf("PIB: %.9f bilhões de reais\n", pib1);
-    printf("Número de Pontos Turísticos: %d",pontos1);
+    printf("Número de Pontos Turísticos: %d\n",pontos1);
 
 
 
