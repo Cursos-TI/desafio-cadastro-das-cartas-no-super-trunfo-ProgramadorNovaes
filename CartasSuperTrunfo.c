@@ -7,13 +7,13 @@ printf("-      Bem Vindo ao Jogo Super Trunfo       -\n");
 printf("---------------------------------------------\n");
 
 char codigo;
-char estado[10];
-char cidade[20];
-int populacao,pontosturisticos;
-float area,pib;
+char estado[20] = "Alice";
+char cidade;
+int populacao,pontos;
+double area,pib;
 
 printf("   Digite uma letra para Categoria Estado:\n");
-scanf("    %c", &estado);
+scanf(", &estado);
 
 printf("   Digite a populaçâo: \n");
 scanf("    %d", &populacao);
@@ -31,7 +31,7 @@ printf("   Digite uma letra para Categoria Estado:\n");
 scanf("    %f", &area);
 
 printf("   Digite uma letra para Categoria Estado:\n");
-scanf("    %d", &pontosturisticos);
+scanf("    %d", &pontos);
 
 
 
