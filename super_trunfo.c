@@ -8,104 +8,56 @@ printf("---------------------------------------------\n");
 
 printf("Primeiro voçê vai digitar os dados da primeira carta\n");
 printf("____________________________________________________\n");
-    int idade;                                       
-    int populacao; 
-    int pontos;                                                                     
-    float area;                                   
-    double pibbilhoesdereais;                 
-    char estado;                                     
-    char codigo[4];                                
-    char cidade[12];                 
+    int idade1;                                       
+    int populacao1; 
+    int pontos1;                                                                     
+    float area1;                                   
+    double pib1;                 
+    char estado1;                                     
+    char codigo1[4];                                
+    char cidade1[12];                 
 
-    printf ("Digite um número: \n", idade);
-    scanf("%d", &idade);
+    printf ("Digite um número: \n", idade1);
+    scanf("%d", &idade1);
     printf("---------------------------------------------\n");
 
-    printf("Escolha uma letra de 'A a H': \n", estado);
-    scanf(" %c", &estado); 
+    printf("Escolha uma letra de 'A a H': \n", estado1);
+    scanf(" %c", &estado1); 
     printf("---------------------------------------------\n");
 
-    printf("Escoha um número de 1 a 4: \n", codigo);
-    scanf("%s", &codigo);
+    printf("Escoha um número de 01 a 04: \n", codigo1);
+    scanf("%s", &codigo1);
     printf("---------------------------------------------\n");
 
-    printf ("Nome da Cidade: \n", cidade);
-    scanf ("%11s", &cidade);
+    printf ("Nome da Cidade: \n", cidade1);
+    scanf ("%11s", &cidade1);
     printf("---------------------------------------------\n");
 
-    printf("População: \n", populacao);
-    scanf("%d", &populacao);
+    printf("População: \n", populacao1);
+    scanf("%d", &populacao1);
     printf("---------------------------------------------\n");
 
-    printf("Área (em km²): \n", area);  
-    scanf(":%f", &area); 
+    printf("Área (em km²): \n", area1);  
+    scanf(":%f", &area1); 
     printf("---------------------------------------------\n");
 
-    printf("PIB: \n", pibbilhoesdereais);
-    scanf(":%lf", &pibbilhoesdereais);  
+    printf("PIB: \n", pib1);
+    scanf(":%lf", &pib1);  
     printf("---------------------------------------------\n");
 
-    printf("Números de pontos Turísticos: \n");
-    scanf(":%d", &pontos);
+    printf("Números de pontos Turísticos: \n",pontos1);
+    scanf(":%d", &pontos1);
     printf("---------------------------------------------\n");
 
-    printf("Esse são os dados da sua carta 1\n");
+    printf("Esse são os dados da sua primeira carta\n");
 
-    printf("Carta: %d\n", idade);
-    printf("Estado: %c\n", estado);
-    printf("Código: %s\n", codigo);
-    printf("Nome da Cidade: %s\n", cidade);
-    printf("População: %d\n", populacao);
-    printf("Área: %.3f km²\n", area);
-    printf("PIB: %.9f bilhões de reais\n", pibbilhoesdereais);
-    
-    printf("Agora digite os dados da segunda carta\n");
-
-    printf ("Digite um número: \n", idade);
-    scanf("%d", &idade);
-    printf("---------------------------------------------\n");
-
-    printf("Escolha uma letra de 'A a H': \n", estado);
-    scanf(" %c", &estado); 
-    printf("---------------------------------------------\n");
-
-    printf("Escoha um número de 1 a 4: \n", codigo);
-    scanf("%s", &codigo);
-    printf("---------------------------------------------\n");
-
-    printf ("Nome da Cidade: \n", cidade);
-    scanf ("%11s", &cidade);
-    printf("---------------------------------------------\n");
-
-    printf("População: \n", populacao);
-    scanf("%d", &populacao);
-    printf("---------------------------------------------\n");
-
-    printf("Área (em km²): \n", area);  
-    scanf(":%f", &area); 
-    printf("---------------------------------------------\n");
-
-    printf("PIB: \n", pibbilhoesdereais);
-    scanf(":%lf", &pibbilhoesdereais);  
-    printf("---------------------------------------------\n");
-
-    printf("Números de pontos Turísticos: \n");
-    scanf(":%d", &pontos);
-    printf("---------------------------------------------\n");
-
-    printf("Esse são os dados da sua carta 2\n");
-
-    printf("Carta 2\n");
-    printf("Carta: %d\n", idade);
-    printf("Estado: %c\n", estado);
-    printf("Código: %s\n", codigo);
-    printf("Nome da Cidade: %s\n", cidade);
-    printf("População: %d\n", populacao);
-    printf("Área: %.3f km²\n", area);
-    printf("PIB: %.9f bilhões de reais\n", pibbilhoesdereais);
-
-
-
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n", cidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.3f km²\n", area1);
+    printf("PIB: %.9f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d",pontos1);
 
 
 
