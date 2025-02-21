@@ -27,28 +27,28 @@ int main() {
         printf("\nDigite os dados da %dª carta:\n", i + 1);
         printf("---------------------------------------------\n");
 
-        printf("Digite um número: ");
+        printf("Digite um número: \n");
         scanf("%d", &cartas[i].idade);
         
-        printf("Escolha uma letra de 'A a H': ");
+        printf("Escolha uma letra de 'A a H':\n");
         scanf(" %c", &cartas[i].estado);
 
-        printf("Escolha um número de 01 a 04: ");
+        printf("Escolha um número de 01 a 04: \n");
         scanf("%s", cartas[i].codigo);
 
-        printf("Nome da Cidade: ");
+        printf("Nome da Cidade: \n");
         scanf("%11s", cartas[i].cidade);
 
-        printf("População: ");
+        printf("População: \n");
         scanf("%d", &cartas[i].populacao);
 
-        printf("Área (em km²): ");
+        printf("Área (em km²): \n");
         scanf("%f", &cartas[i].area);
 
-        printf("PIB: ");
+        printf("PIB: \n");
         scanf("%lf", &cartas[i].pib);
 
-        printf("Número de pontos turísticos: ");
+        printf("Número de pontos turísticos: \n");
         scanf("%d", &cartas[i].pontos);
         
         printf("---------------------------------------------\n");
