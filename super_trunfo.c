@@ -1,73 +1,72 @@
 #include <stdio.h>
 
-int main() {
+#define TOTAL_CARTAS 2  
 
-#define total_cartas 2
 
-printf("---------------------------------------------\n");
-printf("-      Bem Vindo ao Jogo Super Trunfo       -\n");
-printf("---------------------------------------------\n");
-
-printf("Primeiro voçê vai digitar os dados da primeira carta\n");
-printf("____________________________________________________\n");
-    
 typedef struct {
-    int idade1;                                       
-    int populacao1; 
-    int pontos1;                                                                     
-    float area1;                                   
-    double pib1;                 
-    char estado1;                                     
-    char codigo1[4];                                
-    char cidade1[12]; 
+    int idade;                                       
+    int populacao; 
+    int pontos;                                                                     
+    float area;                                   
+    double pib;                  
+    char estado;                                     
+    char codigo[4];                                
+    char cidade[12]; 
+} Carta;
+
+int main() {
+    Carta cartas[TOTAL_CARTAS];  
+    int i;  
+
+    printf("---------------------------------------------\n");
+    printf("-      Bem Vindo ao Jogo Super Trunfo       -\n");
+    printf("---------------------------------------------\n");
+
     
-} carta;
+    for (i = 0; i < TOTAL_CARTAS; i++) {
+        printf("\nDigite os dados da %dª carta:\n", i + 1);
+        printf("---------------------------------------------\n");
 
-    printf ("Digite um número: \n", idade1);
-    scanf("%d", &idade1);
-    printf("---------------------------------------------\n");
+        printf("Digite um número: ");
+        scanf("%d", &cartas[i].idade);
+        
+        printf("Escolha uma letra de 'A a H': ");
+        scanf(" %c", &cartas[i].estado);
 
-    printf("Escolha uma letra de 'A a H': \n", estado1);
-    scanf(" %c", &estado1); 
-    printf("---------------------------------------------\n");
+        printf("Escolha um número de 01 a 04: ");
+        scanf("%s", cartas[i].codigo);
 
-    printf("Escoha um número de 01 a 04: \n", codigo1);
-    scanf("%s", &codigo1);
-    printf("---------------------------------------------\n");
+        printf("Nome da Cidade: ");
+        scanf("%11s", cartas[i].cidade);
 
-    printf ("Nome da Cidade: \n", cidade1);
-    scanf ("%11s", &cidade1);
-    printf("---------------------------------------------\n");
+        printf("População: ");
+        scanf("%d", &cartas[i].populacao);
 
-    printf("População: \n", populacao1);
-    scanf("%d", &populacao1);
-    printf("---------------------------------------------\n");
+        printf("Área (em km²): ");
+        scanf("%f", &cartas[i].area);
 
-    printf("Área (em km²): \n", area1);  
-    scanf("%f", &area1); 
-    printf("---------------------------------------------\n");
+        printf("PIB: ");
+        scanf("%lf", &cartas[i].pib);
 
-    printf("PIB: \n", pib1);
-    scanf("%lf", &pib1);  
-    printf("---------------------------------------------\n");
+        printf("Número de pontos turísticos: ");
+        scanf("%d", &cartas[i].pontos);
+        
+        printf("---------------------------------------------\n");
+    }
 
-    printf("Números de pontos Turísticos: \n",pontos1);
-    scanf("%d", &pontos1);
-    printf("---------------------------------------------\n");
-
-    printf("Esse são os dados da sua primeira carta\n");
-
-    printf("Estado: %c\n", estado1);
-    printf("Código: %s\n", codigo1);
-    printf("Nome da Cidade: %s\n", cidade1);
-    printf("População: %d\n", populacao1);
-    printf("Área: %.3f km²\n", area1);
-    printf("PIB: %.9f bilhões de reais\n", pib1);
-    printf("Número de Pontos Turísticos: %d\n",pontos1);
-
-
-
-
+    
+    printf("\n--- Cartas cadastradas ---\n");
+    for (i = 0; i < TOTAL_CARTAS; i++) {
+        printf("\nDados da %dª carta:\n", i + 1);
+        printf("Estado: %c\n", cartas[i].estado);
+        printf("Código: %s\n", cartas[i].codigo);
+        printf("Nome da Cidade: %s\n", cartas[i].cidade);
+        printf("População: %d\n", cartas[i].populacao);
+        printf("Área: %.3f km²\n", cartas[i].area);
+        printf("PIB: %.9f bilhões de reais\n", cartas[i].pib);
+        printf("Número de Pontos Turísticos: %d\n", cartas[i].pontos);
+        printf("---------------------------------------------\n");
+    }
 
     return 0;
 }
